@@ -38,8 +38,10 @@ Listing of an ASCII content
 
 Uma conta de acesso neste website permite ao usuário, posterior à concessão da conta, usufruir das ferramentas disponibilizadas pelo `ismr-query-tool`. As diferentes funcionalidades são autorizadas, negadas ou revogadas segundo a categoria de acesso de cada conta.
 
+- [ ] - ToDo: Frontend: Update hardcoded links after publish final version
+
 > [!IMPORTANT]
-> É de inteira responsabilidade do usuário ler e entender os termos de uso desta aplicação online à cada login. Caso não concorde com os termos, não utilize a plataforma.
+> É de inteira responsabilidade do usuário ler e entender os [termos de uso](http://200.145.185.122/citing/terms) desta aplicação online à cada login. Caso não concorde com os termos, não utilize a plataforma.
 
 ## Realizar o login para acesso
 
@@ -59,7 +61,10 @@ Siga as instruções contidas no email.
 
 ## Como citar
 
-Solicita-se que todo usuário da plataforma, que faça uso dos dados, resultados, 
+- [ ] - ToDo: Frontend: Update hardcoded links after publish final version
 
+Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resultados, e outros produtos derivados do `ismr-query-tool` cite a fonte como sugerido em [aqui](http://200.145.185.122/citing/terms)
 
+## Historico de alterações
 
+20250311 - rgui - Versão inicial deste texto, sem imagens
