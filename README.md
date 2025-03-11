@@ -49,6 +49,11 @@ Após requisitada e autorizada a conta, o usuário, mediante o processo de login
 
 Na eventual perda da senha de acesso, o usuário, de posse do email cadastrado por ele na plataforma, realiza o pedido de recuperação de senha. O sistema verifica a existência da conta e encaminha uma mensagem via email com mais instruções para o usuário.
 
+> [!CAUTION]
+> Caso sejam realizados diversos pedidos em um curto período de tempo, para evitar incovenientes com a conta de email do usuário, o sistema aplica uma regra de espera. Neste caso, sugere-se ao usuário tentar novamente mais tarde.
+
+Siga as instruções contidas no email.
+
 > [!NOTE]
 > Nesta versão da aplicação, o mesmo processo de recuperar senha é utilizado para a troca de senha.
 
