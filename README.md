@@ -1,6 +1,20 @@
-![image](http://200.145.185.122/assets/logoUnesp-DnApevcw.png)
 
-![image](http://200.145.185.122/assets/logo-BNkj-t-h.png)
+<img src="http://200.145.185.122/assets/logoInct-DL_vtv_3.png" alt="Description" width="25%">
+
+<!--
+![image](http://200.145.185.122/assets/logoInct-DL_vtv_3.png|width=10)
+
+![image](http://200.145.185.122/assets/logoUnesp-DnApevcw.png){width=300 height=200}
+
+![image](http://200.145.185.122/assets/logo-BNkj-t-h.png){width=300 height=200}
+
+<img src="http://200.145.185.122/assets/logoUnesp-DnApevcw.png" alt="Description" width="25%">
+
+<img src="http://200.145.185.122/assets/logo-BNkj-t-h.png" alt="Description" width="25%">
+<img src="[image.jpg](http://200.145.185.122/assets/logo-BNkj-t-h.png)" alt="Description" width="50%">
+
+height="200"
+-->
 
 # ismr-query-tool-manual
 
@@ -72,7 +86,5 @@ Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resu
 ## Historico de alterações
 
 
-![image](http://200.145.185.122/assets/logoInct-DL_vtv_3.png)
-
-20250318 - rgui - Versão com logotipos herdados do servidor
+20250318 - rgui - Versão com logotipos herdados do servidor. MD não suporta resize.
 20250311 - rgui - Versão inicial deste texto, sem imagens
