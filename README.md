@@ -87,4 +87,5 @@ Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resu
 
 
 20250318 - rgui - Versão com logotipos herdados do servidor. MD não suporta resize.
+
 20250311 - rgui - Versão inicial deste texto, sem imagens
