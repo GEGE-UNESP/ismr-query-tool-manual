@@ -1,3 +1,7 @@
+![image](http://200.145.185.122/assets/logoUnesp-DnApevcw.png)
+
+![image](http://200.145.185.122/assets/logo-BNkj-t-h.png)
+
 # ismr-query-tool-manual
 
 Este documento tem por objetivo reunir todas as etapas que auxiliem os usuários na exploração das funcionalidades da ferramenta ismr-query-tool via interface web. Algumas das funcionalidades apresentadas podem não estar disponíveis para seu usuário, devendo a mesma ser solicitada para o responsável pela gestão de contas e privilégios.
@@ -67,4 +71,8 @@ Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resu
 
 ## Historico de alterações
 
+
+![image](http://200.145.185.122/assets/logoInct-DL_vtv_3.png)
+
+20250318 - rgui - Versão com logotipos herdados do servidor
 20250311 - rgui - Versão inicial deste texto, sem imagens
