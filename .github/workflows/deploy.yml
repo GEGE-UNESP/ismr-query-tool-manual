@@ -1,0 +1,29 @@
+name: Deploy para GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Ou a branch principal do seu repositório
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências (Pandoc, Make, LaTeX, KaTeX)
+        run: sudo apt-get install -y pandoc make texlive-xetex texlive-fonts-recommended texlive-latex-extra
+
+      - name: Executar Makefile
+        run: make dist
+
+      - name: Mover index.html para a raiz
+        run: cp build/index.html .
+
+      - name: Deploy para GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
