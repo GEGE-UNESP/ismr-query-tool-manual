@@ -21,8 +21,15 @@ jobs:
           cd manual
           make dist
 
+      - name: Verificar se manual.html foi gerado
+        run: |
+          if [ ! -f build/manual.html ]; then
+            echo "Erro: manual.html não foi gerado."
+            exit 1
+          fi
+
       - name: Mover index.html para a raiz
-        run: cp build/index.html .
+        run: cp build/manual.html build/index.html
 
       - name: Deploy para GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
