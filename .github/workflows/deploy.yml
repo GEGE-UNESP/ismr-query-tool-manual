@@ -3,7 +3,7 @@ name: Deploy para GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   build:
@@ -16,20 +16,21 @@ jobs:
       - name: Instalar dependências (Pandoc, Make, LaTeX, KaTeX)
         run: sudo apt-get install -y pandoc make texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
-      - name: Executar Makefile
+      - name: Executar Makefile para gerar manual.html
         run: |
           cd manual
           make dist
 
       - name: Verificar se manual.html foi gerado
         run: |
-          if [ ! -f manual.html ]; then
+          if [ ! -f manual/build/manual.html ]; then
             echo "Erro: manual.html não foi gerado."
             exit 1
           fi
 
-      - name: Mover index.html para a raiz
-        run: cp manual.html index.html
+      - name: Mover manual.html para a raiz
+        run: |
+          cp manual/build/manual.html ./index.html
 
       - name: Deploy para GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
