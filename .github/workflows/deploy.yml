@@ -17,7 +17,9 @@ jobs:
         run: sudo apt-get install -y pandoc make texlive-xetex texlive-fonts-recommended texlive-latex-extra
 
       - name: Executar Makefile
-        run: make dist
+        run: |
+          cd manual
+          make dist
 
       - name: Mover index.html para a raiz
         run: cp build/index.html .
