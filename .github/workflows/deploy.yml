@@ -37,3 +37,4 @@ jobs:
         with:
           branch: gh-pages
           folder: public
+          token: ${{ secrets.GH_REPO_TOKEN }}
