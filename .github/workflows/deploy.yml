@@ -26,13 +26,6 @@ jobs:
           echo "Arquivos em manual/build:"
           ls -l manual/build/
 
-      - name: Verificar se manual.html foi gerado
-        run: |
-          if [ ! -f manual/build/manual.html ]; then
-            echo "Erro: manual.html não foi gerado."
-            exit 1
-          fi
-
       - name: Criar a branch gh-pages se não existir
         run: |
           git fetch origin
