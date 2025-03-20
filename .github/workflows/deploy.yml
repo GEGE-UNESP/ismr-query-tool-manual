@@ -26,15 +26,6 @@ jobs:
           echo "Arquivos em manual/build:"
           ls -l manual/build/
 
-      - name: Criar a branch gh-pages se não existir
-        run: |
-          git fetch origin
-          if ! git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
-            git checkout --orphan gh-pages
-          else
-            git checkout gh-pages
-          fi
-
       - name: Copiar arquivos gerados para a pasta correta
         run: |
           rm -rf public || true
