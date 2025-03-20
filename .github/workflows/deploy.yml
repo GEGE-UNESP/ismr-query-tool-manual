@@ -21,6 +21,11 @@ jobs:
           cd manual
           make dist
 
+      - name: Listar arquivos gerados
+        run: |
+          echo "Arquivos em manual/build:"
+          ls -l manual/build/
+
       - name: Verificar se manual.html foi gerado
         run: |
           if [ ! -f manual/build/manual.html ]; then
@@ -28,12 +33,23 @@ jobs:
             exit 1
           fi
 
-      - name: Mover manual.html para a raiz
+      - name: Criar a branch gh-pages se não existir
         run: |
-          cp manual/build/manual.html ./index.html
+          git fetch origin
+          if ! git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout --orphan gh-pages
+          else
+            git checkout gh-pages
+          fi
+
+      - name: Copiar arquivos gerados para a pasta correta
+        run: |
+          rm -rf public || true
+          mkdir -p public
+          cp -r manual/build/* public/
 
       - name: Deploy para GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: .
+          folder: public
