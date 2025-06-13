@@ -1,17 +1,17 @@
 
-<img src="http://200.145.185.122/assets/logoInct-DL_vtv_3.png" alt="Description" width="25%">
+<img src="https://ismrquerytool.fct.unesp.br/assets/logoInct-DL_vtv_3.png" alt="Description" width="25%">
 
 <!--
-![image](http://200.145.185.122/assets/logoInct-DL_vtv_3.png|width=10)
+![image](https://ismrquerytool.fct.unesp.br/assets/logoInct-DL_vtv_3.png|width=10)
 
-![image](http://200.145.185.122/assets/logoUnesp-DnApevcw.png){width=300 height=200}
+![image](https://ismrquerytool.fct.unesp.br/assets/logoUnesp-DnApevcw.png){width=300 height=200}
 
-![image](http://200.145.185.122/assets/logo-BNkj-t-h.png){width=300 height=200}
+![image](https://ismrquerytool.fct.unesp.br/assets/logo-BNkj-t-h.png){width=300 height=200}
 
-<img src="http://200.145.185.122/assets/logoUnesp-DnApevcw.png" alt="Description" width="25%">
+<img src="https://ismrquerytool.fct.unesp.br/assets/logoUnesp-DnApevcw.png" alt="Description" width="25%">
 
-<img src="http://200.145.185.122/assets/logo-BNkj-t-h.png" alt="Description" width="25%">
-<img src="[image.jpg](http://200.145.185.122/assets/logo-BNkj-t-h.png)" alt="Description" width="50%">
+<img src="https://ismrquerytool.fct.unesp.br/assets/logo-BNkj-t-h.png" alt="Description" width="25%">
+<img src="[image.jpg](https://ismrquerytool.fct.unesp.br/assets/logo-BNkj-t-h.png)" alt="Description" width="50%">
 
 height="200"
 -->
@@ -59,7 +59,7 @@ Uma conta de acesso neste website permite ao usuário, posterior à concessão d
 - [ ] - ToDo: Frontend: Update hardcoded links after publish final version
 
 > [!IMPORTANT]
-> É de inteira responsabilidade do usuário ler e entender os [termos de uso](http://200.145.185.122/citing/terms) desta aplicação online à cada login. Caso não concorde com os termos, não utilize a plataforma.
+> É de inteira responsabilidade do usuário ler e entender os [termos de uso](https://ismrquerytool.fct.unesp.br/citing/terms) desta aplicação online à cada login. Caso não concorde com os termos, não utilize a plataforma.
 
 ## Realizar o login para acesso
 
@@ -77,11 +77,15 @@ Siga as instruções contidas no email.
 > [!NOTE]
 > Nesta versão da aplicação, o mesmo processo de recuperar senha é utilizado para a troca de senha.
 
+ ## Termos de Uso e Política de Privacidade (v2025.06.13)
+
+A reprodução de conteúdos é livre desde que sejam creditados à Plataforma ISMR Query Tool e aos respectivos autores, com indicação do endereço eletrônico (URL) da publicação original. Este serviço encontra-se hospedado na rede Unesp. Desta forma, declaro ter ciência da <a href="https://repositorio.unesp.br/info/privacy" target="_blank">Política de Privacidade e Tratamento de Dados Pessoais da Unesp</a>, internamente à aplicação da <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018)</a>. Estes termos podem sofrer alterações sem aviso prévio, sendo necessária nova ciência do usuário ao utilizar os serviços no website.
+
 ## Como citar
 
 - [ ] - ToDo: Frontend: Update hardcoded links after publish final version
 
-Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resultados, e outros produtos derivados do `ismr-query-tool` cite a fonte como sugerido em [aqui](http://200.145.185.122/citing/terms)
+Solicita-se que toda[o] usuária[o] da plataforma, que faça uso dos dados, resultados, e outros produtos derivados do `ismr-query-tool` cite a fonte como sugerido em [aqui](https://ismrquerytool.fct.unesp.br/citing/terms)
 
 ## Historico de alterações
 
