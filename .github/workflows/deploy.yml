@@ -1,0 +1,40 @@
+name: Deploy para GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências (Pandoc, Make, LaTeX, KaTeX)
+        run: sudo apt-get install -y pandoc make texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Executar Makefile para gerar manual.html
+        run: |
+          cd manual
+          make dist
+
+      - name: Listar arquivos gerados
+        run: |
+          echo "Arquivos em manual/build:"
+          ls -l manual/build/
+
+      - name: Copiar arquivos gerados para a pasta correta
+        run: |
+          rm -rf public || true
+          mkdir -p public
+          cp -r manual/build/* public/
+
+      - name: Deploy para GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          token: ${{ secrets.GH_REPO_TOKEN }}
