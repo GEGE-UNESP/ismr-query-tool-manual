@@ -24,6 +24,24 @@
     <link rel="stylesheet" href="template/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+    <script defer=""
+    src="/usr/share/javascript/katex/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+    </script>
+    <link rel="stylesheet"
+    href="/usr/share/javascript/katex/katex.min.css" />
 </head>
 <body class="light">
 
@@ -78,6 +96,16 @@
             id="toc-manual-do-ismr-query-tool"><span
             class="toc-section-number">1</span> Manual do Ismr Query
             Tool</a></li>
+            <li><a href="#gráficos-de-cintilação"
+            id="toc-gráficos-de-cintilação"><span
+            class="toc-section-number">2</span> Gráficos de
+            Cintilação</a>
+            <ul>
+            <li><a href="#como-usar-fluxo-rápido"
+            id="toc-como-usar-fluxo-rápido"><span
+            class="toc-section-number">2.1</span> Como usar (fluxo
+            rápido)</a></li>
+            </ul></li>
             </ul>
         </div>
     </nav>
@@ -130,6 +158,55 @@ de Privacidade e Tratamento de Dados Pessoais da Unesp</a>, internamente
 Geral de Proteção de Dados (LGPD - Lei 13.709/2018)</a>. Estes termos
 podem sofrer alterações sem aviso prévio, sendo necessária nova ciência
 do usuário ao utilizar os serviços no website.</p>
+<h1 data-number="2" id="gráficos-de-cintilação"><span
+class="header-section-number">2</span> Gráficos de Cintilação</h1>
+<p>Esta seção descreve a funcionalidade de geração personalizada de
+gráficos de índices de cintilação ionosférica a partir de dados
+históricos de monitoramento.</p>
+<p>A ferramenta permite visualizar séries temporais de dados que foram
+coletados desde 2011 por centenas de estações. É possível comparar
+satélites, comparar estações, exportar os resultados em formato de
+imagens ou arquivos texto.</p>
+<blockquote>
+<p>[!TIP] O tempo de vida das estações varia conforme o período
+operativo de cada uma delas. Para checar se determinada estação esteve
+em funcionamento em determinado período, utilize a opção de Calendar
+Views ou de Mapa de Estações.</p>
+</blockquote>
+<h2 data-number="2.1" id="como-usar-fluxo-rápido"><span
+class="header-section-number">2.1</span> Como usar (fluxo rápido)</h2>
+<ol type="1">
+<li>Selecione o período de tempo (data/hora de início e de fim);</li>
+<li>Selecione uma ou mais estações de monitoramento;</li>
+<li>Selecione os satélites: há opção de selecionar todos os satélites
+por constelação (ex: selecionar todos os satélites GPS) ou
+invididualmente pelo PRN (ex: selecionar apenas o satélite G01);</li>
+<li>Sinal: selecione dentre as opções disponíveis, sendo que:</li>
+</ol>
+<ul>
+<li>Sig1 significa L1CA para GPS / GLONASS / SBAS / QZSS; E1BC para
+Galileo; B1 para BeiDou;</li>
+<li>Sig2 significa L2C para GPS / GLONASS / QZSS; E5a para Galileo; L5
+para SBAS; B2 para BeiDou;</li>
+<li>Sig3 significa L5 para GPS / QZSS; E5b para Galileo.</li>
+</ul>
+<ol start="5" type="1">
+<li>Filtrar a saída: é possível aplicar filtros booleanos sobre o índice
+que seŕa exibido. Uma sugestão padrão é exibir apenas os valores de
+índices <span class="math inline">S_{4}</span> acima de 0.1, reduzindo
+assim a numerosidade dos pontos na saída gráfica;</li>
+<li>Máscara de elevação (em graus decimais): filtrar os dados de saída
+de acordo com o ângulo de elevação dos satélites (sugestão padrão é
+considerar apenas satélites com ângulo de elevação iguais ou superiores
+a 10°);</li>
+<li>Filtrar outros campos (opcional): Adicionalmente, é possível aplicar
+filtros com operadores booleanos sobre quaisquer parâmetros de
+monitoramento disponíveis;</li>
+<li>Rótulos: edite os títulos do gráfico ou dos eixos X e Y.</li>
+<li>Destacar satélites ou estação: utilize esta opção para alternar
+entre a identificação dos pontos por cores/símbolos distintos por
+satélite ou por estação.</li>
+</ol>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
